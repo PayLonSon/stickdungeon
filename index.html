@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>火柴人地城 StickDungeon</title>
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center;
+         background: #fdfbf5; color: #222; font-family: system-ui, "Noto Sans TC", sans-serif; text-align: center; }
+  main { padding: 24px; }
+  svg { width: 140px; height: 160px; }
+  .stick { stroke: #222; stroke-width: 4; stroke-linecap: round; fill: none; }
+  .arm { transform-origin: 70px 62px; animation: wave 1.2s ease-in-out infinite alternate; }
+  @keyframes wave { from { transform: rotate(-10deg); } to { transform: rotate(25deg); } }
+  h1 { font-size: 1.6rem; margin: 12px 0 4px; }
+  p { color: #666; margin: 4px 0; }
+  a { color: #c0392b; }
+</style>
+</head>
+<body>
+<main>
+  <svg viewBox="0 0 140 160" aria-hidden="true">
+    <circle class="stick" cx="70" cy="34" r="16"/>
+    <line class="stick" x1="70" y1="50" x2="70" y2="105"/>
+    <line class="stick" x1="70" y1="62" x2="45" y2="85"/>
+    <g class="arm">
+      <line class="stick" x1="70" y1="62" x2="98" y2="45"/>
+      <line class="stick" x1="98" y1="45" x2="112" y2="18" style="stroke:#888"/>
+    </g>
+    <line class="stick" x1="70" y1="105" x2="50" y2="145"/>
+    <line class="stick" x1="70" y1="105" x2="90" y2="145"/>
+  </svg>
+  <h1>火柴人地城 StickDungeon</h1>
+  <p>🚧 地城還在挖，敬請期待！</p>
+  <p><a href="https://github.com/PayLonSon/stickdungeon/blob/main/SPEC.md">看規格書</a></p>
+</main>
+</body>
+</html>
