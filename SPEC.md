@@ -4,7 +4,7 @@
 |---|---|
 | 文件版本 | v0.4（2026-11-17） |
 | 專案名稱 | 火柴人地城 StickDungeon（暫定） |
-| 建議 Repo | `PayLonSon/StickDungeon` |
+| Repo | [`PayLonSon/stickdungeon`](https://github.com/PayLonSon/stickdungeon) |
 | 部署方式 | GitHub Pages（純靜態網站） |
 | 文件狀態 | 草稿，待確認「待決定事項」（見 9.5） |
 
@@ -61,7 +61,7 @@
 
 ## 3. 功能要求
 
-### 3.1 大廳與房間（FR-01～FR-06）
+### 3.1 大廳與房間（FR-01～FR-07）
 | 編號 | 要求 |
 |---|---|
 | FR-01 | 玩家可按「開房」成為房主，系統以 `crypto.getRandomValues()` 產生 4 碼房號（排除 0/O/1/I）並顯示 QR Code |
@@ -344,7 +344,8 @@
   "map": { "size": 5, "rooms": [ { "x":0, "y":0, "type":"start", "seen":true } ] },
   "party": { "x": 0, "y": 0, "gold": 30 },
   "players": [
-    { "id":"p1", "name":"阿明",   // id 為公開 pid，狀態中不含任何 token "cls":"warrior", "color":"#e74c3c",
+    // id 為公開 pid；狀態中不含任何 token
+    { "id":"p1", "name":"阿明", "cls":"warrior", "color":"#e74c3c",
       "hp":14, "maxHp":14, "ac":15, "stats":{"str":16,"dex":12,"int":8,"con":14},
       "skills":[{"id":"bash","uses":null}], "items":["potion"],
       "down":false, "online":true }
@@ -424,7 +425,7 @@
 
 ### 8.2 檔案結構
 ```
-StickDungeon/
+stickdungeon/
 ├── index.html
 ├── css/style.css
 ├── js/
@@ -553,7 +554,7 @@ StickDungeon/
 ### 9.5 待決定事項
 - [ ] 隊伍移動：房主決定，還是多數決？
 - [ ] v2 是否加入玩家擔任地城主（DM）模式？
-- [ ] 遊戲名稱與 Repo 名稱是否用 `StickDungeon`？
+- [ ] 遊戲名稱是否定為 StickDungeon（Repo 已建立為 `PayLonSon/stickdungeon`）？
 - [ ] 是否加入跨局解鎖（新職業、新外觀）？
 - [ ] 魔王是否每局隨機（巨龍 / 巫妖 / 巨人）？
 - [ ] 互動教學關是否也開放在大廳等待時遊玩（等人時打發時間）？
